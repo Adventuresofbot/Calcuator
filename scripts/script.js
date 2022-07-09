@@ -84,7 +84,7 @@ function keyboardInputHandler(e) {
   } else if (e.key === "-") {
     res.value += "-";
   } else if (e.key === "×") {
-    res.value += "*";
+    res.value += "×";
   } else if (e.key === "/") {
     res.value += "/";
   }
