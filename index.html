@@ -57,36 +57,16 @@
         <input type="button" value="." onclick="liveScreen('.')" />
         <input type="button" value="=" onclick="calculate(result.value)" />
        <div id="clearbutton">   
-<input type="button" value="Clear" onclick="javascript:eraseText();"> 
+<input type="button" value="Clear" onclick="Backspace();"> 
 </div>
       </div>
     </div>
   </div>
   <script src="scripts/script.js">
   </script>
-  <script>// code for letter translation
-$(document).ready(function(){
-  var txt=$('#translation');
-  $("#letters").on('click','input',function() {
-    txt.val(txt.val()+this.id);
-  });
- });
-
-
-//Clear Button Function 
-function eraseText() {
-document.getElementById("translation").value = "";
-}
-
-//disable backspace outside of text boxes
-$(document).keydown(function (e) {
-                var element = e.target.nodeName.toLowerCase();
-                if ((element != 'input' && element != 'textarea') || $(e.target).attr("readonly") || (e.target.getAttribute("type") ==="checkbox")) {
-                    if (e.keyCode === 8) {
-                    return false;
-                    }
-                }
-});
+  <script>
+    function Backspace() {
+    myTextarea.value = myTextarea.value.substring(0, myTextarea.value.length - 1);
     </script>
 </body>
 
