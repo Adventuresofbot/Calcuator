@@ -100,6 +100,7 @@ function keyboardInputHandler(e) {
   }
 
   //backspace for removing the last input
+  const Backspace = document.getElementById(".Backspace");
   funtion Backspace() {
   if (e.key === "x") {
     const resultInput = res.value;
