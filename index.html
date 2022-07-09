@@ -56,39 +56,37 @@
         <input type="button" value="0" onclick="liveScreen(0)" />
         <input type="button" value="." onclick="liveScreen('.')" />
         <input type="button" value="=" onclick="calculate(result.value)" />
-        <input type="button" id="backspace_button" onclick="backSpace()" value="x"/>
+       <div id="clearbutton">   
+<input type="button" value="Clear" onclick="javascript:eraseText();"> 
+</div>
       </div>
     </div>
   </div>
   <script src="scripts/script.js">
   </script>
-  <script>
-    // Clear and backspace  
-            
-            function clearAll() {
-                if (control){
-                    lastScreen = screenView.value;
-                    screenView.value = 0;
-                    alert("cleared!");
-                }
-            }
-            
-            function backSpace() {
-                if (control) {
-                    var newScreenView = [];
-                    if (screenView.value != 0) {
-                        screenViewLength = screenView.value.length;
-                        for (i = 0; i < screenViewLength; i++) {
-                            newScreenView.push(screenView.value[i]);
-                        }
-                        remove = newScreenView.length ;
-                        console.log(newScreenView[remove]);
-                        //screenView.value = newScreenView;
+  <script>// code for letter translation
+$(document).ready(function(){
+  var txt=$('#translation');
+  $("#letters").on('click','input',function() {
+    txt.val(txt.val()+this.id);
+  });
+ });
+
+
+//Clear Button Function 
+function eraseText() {
+document.getElementById("translation").value = "";
+}
+
+//disable backspace outside of text boxes
+$(document).keydown(function (e) {
+                var element = e.target.nodeName.toLowerCase();
+                if ((element != 'input' && element != 'textarea') || $(e.target).attr("readonly") || (e.target.getAttribute("type") ==="checkbox")) {
+                    if (e.keyCode === 8) {
+                    return false;
                     }
-                
-                alert("backspace");
                 }
-            }
+});
     </script>
 </body>
 
