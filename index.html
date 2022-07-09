@@ -56,18 +56,20 @@
         <input type="button" value="0" onclick="liveScreen(0)" />
         <input type="button" value="." onclick="liveScreen('.')" />
         <input type="button" value="=" onclick="calculate(result.value)" />
-       <div id="clearbutton">   
-<input type="button" value="Clear" onclick="Backspace();"> 
-</div>
+      <button id="backSpace">BackSpace</button>
+<input type="text" name="textBox" id="textBox">
       </div>
     </div>
   </div>
   <script src="scripts/script.js">
   </script>
-  <script>function BackSpace() {
-                    var bsp = document.getElementById("ns").value;
-                    document.getElementById("ns").value=bsp.substring(0,bsp.length-1);
-                }
+  <script>
+    const backSpace=document.getElementById('backSpace')
+const textBox=document.getElementById('textBox')
+
+backSpace.addEventListener('click',function(){
+textBox.value = textBox.value.substring(0, textBox.value.length-1)
+})
     </script>
 </body>
 
