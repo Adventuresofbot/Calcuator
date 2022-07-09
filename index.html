@@ -64,9 +64,10 @@
   </div>
   <script src="scripts/script.js">
   </script>
-  <script>
-    function Backspace() {
-    myTextarea.value = myTextarea.value.substring(0, myTextarea.value.length - 1);
+  <script>function BackSpace() {
+                    var bsp = document.getElementById("ns").value;
+                    document.getElementById("ns").value=bsp.substring(0,bsp.length-1);
+                }
     </script>
 </body>
 
