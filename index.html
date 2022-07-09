@@ -56,12 +56,40 @@
         <input type="button" value="0" onclick="liveScreen(0)" />
         <input type="button" value="." onclick="liveScreen('.')" />
         <input type="button" value="=" onclick="calculate(result.value)" />
-         <input type="button" value="Backspace" onclick="substring(0, res.value.length - 1)" />
+        <input type="button" id="backspace_button" onclick="backSpace()" value="x"/>
       </div>
     </div>
   </div>
   <script src="scripts/script.js">
   </script>
+  <script>
+    // Clear and backspace  
+            
+            function clearAll() {
+                if (control){
+                    lastScreen = screenView.value;
+                    screenView.value = 0;
+                    alert("cleared!");
+                }
+            }
+            
+            function backSpace() {
+                if (control) {
+                    var newScreenView = [];
+                    if (screenView.value != 0) {
+                        screenViewLength = screenView.value.length;
+                        for (i = 0; i < screenViewLength; i++) {
+                            newScreenView.push(screenView.value[i]);
+                        }
+                        remove = newScreenView.length ;
+                        console.log(newScreenView[remove]);
+                        //screenView.value = newScreenView;
+                    }
+                
+                alert("backspace");
+                }
+            }
+    </script>
 </body>
 
 </html>
