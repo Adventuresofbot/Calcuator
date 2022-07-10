@@ -71,7 +71,9 @@
 const textBox=document.getElementById('textBox')
 
 backSpace.addEventListener('click',function(){
-textBox.value = textBox.value.substring(0, textBox.value.length-1)
+const resultInput = res.value;
+    //remove the last element in the string
+    res.value = resultInput.substring(0, res.value.length - 1)
 })
     </script>
 </body>
