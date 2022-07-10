@@ -65,7 +65,7 @@ input {
   margin-bottom: 4px;
 }
 
-.backspace {
+#backSpace {
   padding: 25px;
   color: rgb(255, 255, 255);
   font-size: 1em;
@@ -78,7 +78,7 @@ input {
   margin: 0.2em;
 }
 
-.backspace:hover {
+#backSpace:hover {
   background-color: rgb(101, 101, 101);
   color: #fff;
 }
@@ -103,7 +103,7 @@ input[type="button"]:hover {
   background-color: rgb(255, 25, 25);
 }
 
-.backspace {
+#backSpace {
   padding: 25px;
   color: rgb(255, 255, 255);
   font-size: 1em;
@@ -116,7 +116,7 @@ input[type="button"]:hover {
   margin: 0.2em;
 }
 
-.backspace:hover {
+#backSpace:hover {
   background-color: rgb(101, 101, 101);
   color: #fff;
 }
