@@ -65,24 +65,6 @@ input {
   margin-bottom: 4px;
 }
 
-#backSpace {
-  padding: 25px;
-  color: rgb(255, 255, 255);
-  font-size: 1em;
-  cursor: pointer;
-  width: 70px;
-  background-color: rgb(47, 51, 50);
-  border: none;
-  outline: none;
-  border-radius: 100px;
-  margin: 0.2em;
-}
-
-#backSpace:hover {
-  background-color: rgb(101, 101, 101);
-  color: #fff;
-}
-
 
 input[type="button"] {
   color: rgb(122, 122, 122);
@@ -105,11 +87,11 @@ input[type="button"]:hover {
 
 #backSpace {
   padding: 25px;
-  color: rgb(255, 255, 255);
+  color: rgb(122, 122, 122);
   font-size: 1em;
   cursor: pointer;
   width: 70px;
-  background-color: rgb(47, 51, 50);
+  background-color: #fff;
   border: none;
   outline: none;
   border-radius: 100px;
@@ -117,7 +99,7 @@ input[type="button"]:hover {
 }
 
 #backSpace:hover {
-  background-color: rgb(101, 101, 101);
+  background-color: rgb(37, 35, 59);
   color: #fff;
 }
 a {
