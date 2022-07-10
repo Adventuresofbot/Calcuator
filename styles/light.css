@@ -66,10 +66,6 @@ input {
 }
 
 
-input[type="button"] {
-  color: rgb(122, 122, 122);
-}
-
 input[type="text"] {
   background-color: rgb(255, 255, 255);
   width: 222.5px;
