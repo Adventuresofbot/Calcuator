@@ -59,8 +59,7 @@
         <div id="Backspace">
         <input type="button" value="x" oneclick="backspace()" />
           </div>
-        <button class="backSpace">x</button>
-      
+        <button id="backSpace">x</button>
       </div>
     </div>
   </div>
@@ -68,7 +67,6 @@
   </script>
   <script>
    const backSpace=document.getElementById('backSpace')
-
 backSpace.addEventListener('click',function(){
 const resultInput = res.value;
     //remove the last element in the string
@@ -76,5 +74,4 @@ const resultInput = res.value;
 })
   </script>
 </body>
-
 </html>
