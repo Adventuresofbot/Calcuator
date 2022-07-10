@@ -106,3 +106,10 @@ function keyboardInputHandler(e) {
     res.value = resultInput.substring(0, res.value.length - 1);
        }
 }
+  const backSpace=document.getElementById('backSpace')
+
+backSpace.addEventListener('click',function(){
+const resultInput = res.value;
+    //remove the last element in the string
+    res.value = resultInput.substring(0, res.value.length - 1)
+})
