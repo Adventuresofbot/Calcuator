@@ -76,7 +76,7 @@ input[type="text"] {
 }
 
 input[type="button"]:hover {
-  background-color: rgb(37, 35, 59);
+  background-color: #c9c5c5;
   color: #fff;
 }
 
@@ -99,7 +99,7 @@ input[type="button"]:hover {
 }
 
 #backSpace:hover {
-  background-color: rgb(37, 35, 59);
+  background-color: #c9c5c5;
   color: #fff;
 }
 a {
