@@ -4,7 +4,6 @@ const blueTheme = "styles/blue.css":
 const sunIcon = "assets/SunIcon.svg";
 const moonIcon = "assets/MoonIcon.svg";
 const themeIcon = document.getElementById("theme-icon");
-const themeIcon2 = document.getElementById("theme-icon2");
 const res = document.getElementById("result");
 const toast = document.getElementById("toast");
 
@@ -30,7 +29,7 @@ function changeTheme() {
     theme.setAttribute("href", darkTheme);
     themeIcon.setAttribute("src", sunIcon);
     toast.innerHTML = "Dark Mode 🌙";
-  } else if{
+  } else {
     theme.setAttribute("href", lightTheme);
     themeIcon.setAttribute("src", moonIcon);
     toast.innerHTML = "Light Mode ☀️";
