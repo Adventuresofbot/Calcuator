@@ -117,3 +117,7 @@ a {
   all: unset;
   cursor: pointer;
 }
+.theme-button {
+  all: unset;
+  cursor: pointer;
+}
