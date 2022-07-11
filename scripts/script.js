@@ -3,7 +3,8 @@ const darkTheme = "styles/dark.css";
 const blueTheme = "styles/blue.css":
 const sunIcon = "assets/SunIcon.svg";
 const moonIcon = "assets/MoonIcon.svg";
-const themeIcon = document.getElementById("theme-icon");
+const themeIcon2 = document.getElementById("theme-icon");
+const themeIcon = document.getElementById("theme-icon2");
 const res = document.getElementById("result");
 const toast = document.getElementById("toast");
 
@@ -36,7 +37,7 @@ function changeTheme() {
   }
   else{
     theme.setAttribute("href", blueTheme);
-    themeIcon.setAttribute("src", moonIcon);
+    themeIcon2.setAttribute("src", moonIcon);
     toast.innerHTML = "Light Mode ☀️";
 }
 
