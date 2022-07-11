@@ -1,5 +1,6 @@
 const lightTheme = "styles/light.css";
 const darkTheme = "styles/dark.css";
+const blueTheme = "styles/blue.css":
 const sunIcon = "assets/SunIcon.svg";
 const moonIcon = "assets/MoonIcon.svg";
 const themeIcon = document.getElementById("theme-icon");
@@ -34,6 +35,7 @@ function changeTheme() {
     toast.innerHTML = "Light Mode ☀️";
   }
 }
+
 
 // Displays entered value on screen.
 function liveScreen(enteredValue) {
