@@ -1,12 +1,10 @@
 const lightTheme = "styles/light.css";
 const darkTheme = "styles/dark.css";
-const blueTheme = "styles/blue.css":
 const sunIcon = "assets/SunIcon.svg";
 const moonIcon = "assets/MoonIcon.svg";
 const themeIcon = document.getElementById("theme-icon");
 const res = document.getElementById("result");
 const toast = document.getElementById("toast");
-
 function calculate(value) {
   const calculatedValue = eval(value || null);
   if (isNaN(calculatedValue)) {
@@ -18,7 +16,6 @@ function calculate(value) {
     res.value = calculatedValue;
   }
 }
-
 // Swaps the stylesheet to achieve dark mode.
 function changeTheme() {
   const theme = document.getElementById("theme");
@@ -35,7 +32,6 @@ function changeTheme() {
     toast.innerHTML = "Light Mode ☀️";
   }
 }
-
 
 // Displays entered value on screen.
 function liveScreen(enteredValue) {
