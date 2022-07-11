@@ -29,11 +29,15 @@ function changeTheme() {
     theme.setAttribute("href", darkTheme);
     themeIcon.setAttribute("src", sunIcon);
     toast.innerHTML = "Dark Mode 🌙";
-  } else {
+  } else if{
     theme.setAttribute("href", lightTheme);
     themeIcon.setAttribute("src", moonIcon);
     toast.innerHTML = "Light Mode ☀️";
   }
+  else{
+    theme.setAttribute("href", blueTheme);
+    themeIcon.setAttribute("src", moonIcon);
+    toast.innerHTML = "Light Mode ☀️";
 }
 
 
