@@ -13,46 +13,87 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap" rel="stylesheet">
 <style>
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+<style>
+.navbar {
   overflow: hidden;
   background-color: #333;
-  position: fixed;
-  top: 0;
-  width: 100%;
 }
 
-li {
+.navbar a {
   float: left;
-}
-
-li a {
-  display: block;
+  font-size: 16px;
   color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
 
-li a:hover:not(.active) {
-  background-color: #111;
+.dropdown {
+  float: left;
+  overflow: hidden;
 }
 
-.active {
-  background-color: #04AA6D;
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: rgb(101, 101, 101);
+  color: #fff;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: rgb(101, 101, 101);
+  color: #fff;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 </style>
 </head>
 <body>
 
-<ul>
-  <li><a class="active" href="#home">Home</a></li>
-  <li><a href="#news">News</a></li>
-  <li><a href="#contact">Contact</a></li>
-  <li><a href="#about">About</a></li>
-</ul>
+<div class="navbar">
+  
+  <div class="dropdown">
+    <button class="dropbtn">Theme 
+      <img src="assets/SunIcon.svg" alt="Theme Icon" height="19" width="19" id="theme-icon">
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </div> 
+</div>
+
   <div class="wrapper">
     <div class="container">
       <div class="header-container">
