@@ -1,10 +1,8 @@
 const lightTheme = "styles/light.css";
 const darkTheme = "styles/dark.css";
-const darkTheme = "styles/blue.css";
 const sunIcon = "assets/SunIcon.svg";
 const moonIcon = "assets/MoonIcon.svg";
 const themeIcon = document.getElementById("theme-icon");
-const themeIcon2 = document.getElementById("theme-icon2");
 const res = document.getElementById("result");
 const toast = document.getElementById("toast");
 function calculate(value) {
@@ -31,20 +29,6 @@ function changeTheme() {
   } else {
     theme.setAttribute("href", lightTheme);
     themeIcon.setAttribute("src", moonIcon);
-    toast.innerHTML = "Light Mode ☀️";
-  }
-}
-function changeThee() {
-  setTimeout(() => {
-    toast.innerHTML = "Calculator";
-  }, 1500);
-  if (theme.getAttribute("href") === lightTheme) {
-    theme.setAttribute("href", darkTheme);
-    themeIcon2.setAttribute("src", sunIcon);
-    toast.innerHTML = "Dark Mode 🌙";
-  } else {
-    theme.setAttribute("href", lightTheme);
-    themeIcon2.setAttribute("src", moonIcon);
     toast.innerHTML = "Light Mode ☀️";
   }
 }
