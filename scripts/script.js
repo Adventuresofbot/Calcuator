@@ -3,8 +3,8 @@ const darkTheme = "styles/dark.css";
 const blueTheme = "styles/blue.css":
 const sunIcon = "assets/SunIcon.svg";
 const moonIcon = "assets/MoonIcon.svg";
-const themeIcon2 = document.getElementById("theme-icon");
-const themeIcon = document.getElementById("theme-icon2");
+const themeIcon = document.getElementById("theme-icon");
+const themeIcon2 = document.getElementById("theme-icon2");
 const res = document.getElementById("result");
 const toast = document.getElementById("toast");
 
