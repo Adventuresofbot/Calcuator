@@ -165,8 +165,8 @@ a {
 .dropdown-content {
   display: none;
   position: absolute; 
-  background-color: rgb(255, 42, 42);
-  color: #ff056d;
+  background-color: #f24949;
+  color: #f700ff;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
