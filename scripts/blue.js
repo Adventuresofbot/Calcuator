@@ -1,4 +1,4 @@
-const lightTheme = "styles/light.css";
+const lightTheme = "styles/blue.css";
 const darkTheme = "styles/dark.css";
 const sunIcon = "assets/SunIcon.svg";
 const moonIcon = "assets/MoonIcon.svg";
