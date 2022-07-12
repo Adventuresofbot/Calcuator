@@ -170,7 +170,7 @@ a {
 }
 
 .dropdown-content a:hover {
-    background-color: rgb(101, 101, 101);
+    background-check: rgb(101, 101, 101);
   color: #fff;
 }
 
@@ -183,3 +183,8 @@ a {
   i {
     color: white;
     }
+
+.colourful {
+  background-check: DodgerBlue;
+  color: #fff;
+  }
