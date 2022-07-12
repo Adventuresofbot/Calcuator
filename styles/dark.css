@@ -92,6 +92,11 @@ padding: 25px;
   outline: none;
   border-radius: 4px;
 }
+#clear-button:hover {
+  background-color: #ff6d05;
+  color: #fff;
+}
+
 
 #backSpace {
  padding: 25px;
