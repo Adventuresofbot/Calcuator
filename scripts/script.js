@@ -45,7 +45,7 @@ function changeThee() {
     themeIcon2.setAttribute("src", sunIcon);
     toast.innerHTML = "Dark Mode 🌙";
   } else {
-    theme.setAttribute("href", blurTheme);
+    theme.setAttribute("href", blueTheme);
     themeIcon2.setAttribute("src", moonIcon);
     toast.innerHTML = "Light Mode ☀️";
   }
