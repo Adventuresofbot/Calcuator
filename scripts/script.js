@@ -31,7 +31,7 @@ function changeTheme() {
   } else {
     theme.setAttribute("href", lightTheme);
     themeIcon.setAttribute("src", moonIcon);
-    toast.innerHTML = "White Light Mode ";
+    toast.innerHTML = "White Light Mode ☀️";
   }
 }
  
