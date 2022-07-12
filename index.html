@@ -57,28 +57,28 @@
         <input type="button" value="C" onclick="result.value=''" id="clear-button" readonly />
       </div>
       <div class="second-row">
-        <input type="button" value="1" onclick="liveScreen(1)" />
-        <input type="button" value="2" onclick="liveScreen(2)" />
-        <input type="button" value="3" onclick="liveScreen(3)" />
-        <input type="button" value="+" onclick="liveScreen('+')" />
+        <input type="button" value="1" onclick="liveScreen(1); playsound()" />
+        <input type="button" value="2" onclick="liveScreen(2); playsound()" />
+        <input type="button" value="3" onclick="liveScreen(3); playsound()" />
+        <input type="button" value="+" onclick="liveScreen('+'); playSound()" />
       </div>
       <div class="third-row">
-        <input type="button" value="4" onclick=" liveScreen(4)" />
-        <input type="button" value="5" onclick=" liveScreen(5)" />
-        <input type="button" value="6" onclick=" liveScreen(6)" />
-        <input type="button" value="-" onclick="liveScreen('-')" />
+        <input type="button" value="4" onclick=" liveScreen(4); playsound()" />
+        <input type="button" value="5" onclick=" liveScreen(5); playsound()" />
+        <input type="button" value="6" onclick=" liveScreen(6); playsound()" />
+        <input type="button" value="-" onclick="liveScreen('-'); playSound()" />
       </div>
       <div class="fourth-row">
-        <input type="button" value="7" onclick="liveScreen(7)" />
-        <input type="button" value="8" onclick="liveScreen(8)" />
-        <input type="button" value="9" onclick=" liveScreen(9)" />
+        <input type="button" value="7" onclick="liveScreen(7); playsound()" />
+        <input type="button" value="8" onclick="liveScreen(8); playsound()" />
+        <input type="button" value="9" onclick="liveScreen(9); playsound()" />
         <input type="button" value="x" onclick="liveScreen('*'); playSound()" />
       </div>
       <div class="fifth-row">
-        <input type="button" value="." onclick="liveScreen('.')" />
-        <input type="button" value="0" onclick="liveScreen(0)" />
+        <input type="button" value="." onclick="liveScreen('.'); playSound()" />
+        <input type="button" value="0" onclick="liveScreen(0),;playsound()" />
         <input type="button" value="=" onclick="calculate(result.value)" />
-        <input type="button" value="÷" onclick="liveScreen('/')" />
+        <input type="button" value="÷" onclick="liveScreen('/'); playSound()" />
         <div class="sixth-row">
         <button id="backSpace">x</button>
           </div>
@@ -97,6 +97,7 @@ const resultInput = res.value;
   </script>
   <script>
     let playSound = () => new Audio("https://www.zapsplat.com/wp-content/uploads/2015/sound-effects-18146/zapsplat_multimedia_click_001_19367.mp3?_=1").play();
+     let playsound = () => new Audio("./assets/audio.mp3").play();
       </script>
 </body>
 </html>
