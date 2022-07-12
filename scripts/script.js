@@ -31,7 +31,7 @@ function changeTheme() {
   } else {
     theme.setAttribute("href", lightTheme);
     themeIcon.setAttribute("src", moonIcon);
-    toast.innerHTML = "Light Mode ☀️";
+    toast.innerHTML = "White Light Mode ☀️";
   }
 }
 
@@ -47,7 +47,7 @@ function changeThee() {
   } else {
     theme.setAttribute("href", blueTheme);
     themeIcon2.setAttribute("src", moonIcon);
-    toast.innerHTML = "Light Mode ☀️";
+    toast.innerHTML = "Colourful Light Mode ☀️";
   }
 }
 
