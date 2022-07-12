@@ -72,7 +72,7 @@
         <input type="button" value="7" onclick="liveScreen(7)" />
         <input type="button" value="8" onclick="liveScreen(8)" />
         <input type="button" value="9" onclick=" liveScreen(9)" />
-        <input type="button" value="x" onclick="liveScreen('*'); live()" />
+        <input type="button" value="x" onclick="liveScreen('*'); playSound()" />
       </div>
       <div class="fifth-row">
         <input type="button" value="." onclick="liveScreen('.')" />
@@ -96,10 +96,7 @@ const resultInput = res.value;
 })
   </script>
   <script>
-    function live() {
-  var sound = document.getElementById("assets/audio.mp3");
-  sound.play();
-      }
+    let playSound = () => new Audio("./assets/audio.mp3").play();
       </script>
 </body>
 </html>
