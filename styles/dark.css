@@ -82,8 +82,15 @@ input[type="button"]:hover {
 }
 
 #clear-button {
+padding: 25px;
   color: #fff;
+  font-size: 1em;
+  cursor: pointer;
+  width: 70px;
   background-color: rgb(255, 42, 42);
+  border: none;
+  outline: none;
+  border-radius: 4px;
 }
 
 #backSpace {
