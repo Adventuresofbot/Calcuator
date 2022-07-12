@@ -183,26 +183,3 @@ a {
   i {
     color: white;
     }
-
-.colour {
-  display: none;
-  position: absolute; 
-  background-color: DodgerBlue;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.colour a {
-  float: none;
-  color: #fff;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-
-.colour a:hover {
-    background-color: DeepSkyBlue;
-  color: #fff;
-}
