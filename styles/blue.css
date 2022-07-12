@@ -89,7 +89,7 @@ input[type="button"]:hover {
   border-radius: 4px;
 }
 #clear-button:hover {
-  background-color: #ff6d05;
+  background-color: DodgerBlue;
   color: #fff;
 }
 
@@ -106,7 +106,7 @@ input[type="button"]:hover {
   border-radius: 4px;
 }
 #backSpace:hover {
-  background-color: #ff6d05;
+  background-color: DeepSkyBlue;
   color: #fff;
 }
 a {
