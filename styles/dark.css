@@ -87,20 +87,19 @@ input[type="button"]:hover {
 }
 
 #backSpace {
-  padding: 25px;
-  color: rgb(255, 255, 255);
+ padding: 25px;
+  color: #fff;
   font-size: 1em;
   cursor: pointer;
   width: 70px;
-  background-color: rgb(47, 51, 50);
+  background-color: rgb(255, 42, 42);
   border: none;
   outline: none;
-  border-radius: 100px;
-  margin: 0.2em;
+  border-radius: 4px;
 }
 
 #backSpace:hover {
-  background-color: rgb(101, 101, 101);
+  background-color: #ff6d05;
   color: #fff;
 }
 
