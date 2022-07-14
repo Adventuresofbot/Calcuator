@@ -80,7 +80,7 @@
         <input type="button" value="=" onclick="calculate(result.value); playaudio()" />
         <input type="button" value="÷" onclick="liveScreen('/'); playSound()" />
         <div class="sixth-row">
-        <button id="backSpace">x</button>
+        <button id="backSpace" oneclick="playAudio()">x</button>
           </div>
       </div>
     </div>
@@ -96,9 +96,11 @@ const resultInput = res.value;
 })
   </script>
   <script>
-    let playSound = () => new Audio("https://www.zapsplat.com/wp-content/uploads/2015/sound-effects-18146/zapsplat_multimedia_click_001_19367.mp3?_=1").play();
+    // let playSound = () => new Audio("https://www.zapsplat.com/wp-content/uploads/2015/sound-effects-18146/zapsplat_multimedia_click_001_19367.mp3?_=1").play();
      let playsound = () => new Audio("./assets/audio2.mp3").play();
-     let playaudio = () => new Audio("./assets/audio3.mp3").play();
+    let playaudio = () => new Audio("./assets/audio3.mp3").play();
+     let playSound = () => new Audio("./assets/audio4.mp3").play();
+     let playAudio = () => new Audio("./assets/audio5.mp3").play();
       </script>
 </body>
 </html>
